@@ -2,12 +2,28 @@
 
 ## Sobre o Projeto
 
-Este projeto visa realizar uma Análise Exploratória de Dados (EDA) e apresentar visualizações de dados (DataViz) para o dataset fornecido. Utilizamos o Pandas Profiling para gerar uma EDA automática, fornecendo insights valiosos diretamente dos dados brutos e apresentando visualizações interativas para explorar.
+Este projeto visa realizar uma Análise Exploratória de Dados (EDA) e apresentar visualizações de dados (DataViz) para o dataset fornecido. Utilizamos o [Pandas Profiling](https://lvgalvao.github.io/5DataGlowUp_lvgalvaofilho/reports/pandas_profiling_report.html) e o [Sweetviz](https://lvgalvao.github.io/5DataGlowUp_lvgalvaofilho/reports/sweetviz_report.html) para gerar uma EDA automática, fornecendo insights valiosos diretamente dos dados brutos e apresentando visualizações interativas para explorar.
 
 Além disso, o projeto inclui um módulo de utilitários (UTILS) que contém um script de correção, criado para tratar questões específicas encontradas durante a EDA, como problemas de codificação nos dados. 
 
 Através deste repositório, buscamos não só armazenar o código e os resultados desta análise mas também oferecer uma documentação robusta e um guia para a execução dos scripts, facilitando a colaboração e o compartilhamento de conhecimento.
 
+## Documentação do projeto
+
+![Mkdocs](static/mkdocs.png)
+![Mkdocs_02](static/mkdocs_2.png)
+[Mkdocs](https://lvgalvao.github.io/5DataGlowUp_lvgalvaofilho/)
+
+## EDA com Pandas Profile
+
+![Pandas_01](static/pandas_profile_1.png)
+![Pandas_02](static/pandas_profile.png)
+[Pandas Profiling](https://lvgalvao.github.io/5DataGlowUp_lvgalvaofilho/reports/pandas_profiling_report.html)
+
+## EDA com Sweetviz
+
+![Sweet](static/sweet_profile.png)
+[Sweetviz Profiling](https://lvgalvao.github.io/5DataGlowUp_lvgalvaofilho/reports/pandas_profiling_report.html)
 ## Passos para Execução
 
 ### 1. Clonar o Repositório
@@ -37,17 +53,11 @@ mkdir Data  # Criar a pasta se ela não existir
 
 **Nota:** Devido ao tamanho do arquivo, ele não está disponível diretamente no GitHub. Assegure-se de mover o arquivo `Listings.csv` para a pasta `Data`.
 
-### 4. Executar o Script Principal
+### 4. Realizando EDA
 
-Execute o script principal para aplicar a correção de codificação e gerar um novo arquivo corrigido.
+Após realizar a correção de codificação, a EDA pode ser visualizada acessando a documentação do MkDocs no diretório `docs` 
 
-```sh
-poetry run python3 src/my_encoding.py
-```
-
-### 5. Realizando EDA
-
-Após realizar a correção de codificação, a EDA pode ser visualizada acessando a documentação do MkDocs no diretório `docs` ou utilizando a ferramenta de visualização em `notebooks/eda.ipynb`.
+Para rodar são 2 arquivos na pasta `src/eda`
 
 🎉 **Pronto!** Agora você tem um ambiente de desenvolvimento configurado e pronto para explorar os dados!
 
