@@ -7,10 +7,10 @@ readme = "README.md"
 packages = [{ include = "5dataglowup_lvgalvaofilho" }]
 
 [tool.poetry.dependencies]
-python = ">=3.11,<3.13"
-pandas = "^2.1.1"
+python = ">=3.11,<3.12"
 chardet = "^5.2.0"
 polars = "^0.19.8"
+ydata-profiling = "^4.6.0"
 
 
 [build-system]
