@@ -1,0 +1,23 @@
+site_name: projeto ETL
+theme:
+  name: material
+  palette:
+    primary: deep blue
+  language: pt
+nav:
+  - Home: index.md
+  - My Report: reports/pandas_profiling_report.html
+
+repo_name: "lvgalvao/5DataGlowUp_lvgalvaofilho"
+repo_url: "https://github.com/lvgalvao/5DataGlowUp_lvgalvaofilho"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python

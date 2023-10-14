@@ -11,6 +11,11 @@ python = ">=3.11,<3.12"
 chardet = "^5.2.0"
 polars = "^0.19.8"
 ydata-profiling = "^4.6.0"
+mkdocs = "^1.5.3"
+pymdown-extensions = "^10.3"
+mkdocs-material = "^9.4.6"
+pygments = "^2.16.1"
+mkdocstrings-python = "^1.7.3"
 
 
 [build-system]
