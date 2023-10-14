@@ -1,4 +1,4 @@
-site_name: projeto ETL
+site_name: 5 Data Glow UP
 theme:
   name: material
   palette:
@@ -6,7 +6,7 @@ theme:
   language: pt
 nav:
   - Home: index.md
-  - My Report: reports/pandas_profiling_report.html
+  - Report Pandas Profiling: reports/pandas_profiling_report.html
 
 repo_name: "lvgalvao/5DataGlowUp_lvgalvaofilho"
 repo_url: "https://github.com/lvgalvao/5DataGlowUp_lvgalvaofilho"
