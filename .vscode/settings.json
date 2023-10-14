@@ -1,5 +1,9 @@
 {
     "files.exclude": {
         "**/.git": false
-    }
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
 }

@@ -1,72 +1,18 @@
-# Solução de Erro de Codificação no Dataset `Listings.csv`
+# Projeto de Exploração de Dados e DataViz
 
-## Problema: Erro de Codificação na Coluna "Name"
+## Sobre o Projeto
 
-### 🕵️‍♂️ Origem Suspeita do Erro:
+Este projeto visa realizar uma Análise Exploratória de Dados (EDA) e apresentar visualizações de dados (DataViz) para o dataset fornecido. Utilizamos o Pandas Profiling para gerar uma EDA automática, fornecendo insights valiosos diretamente dos dados brutos e apresentando visualizações interativas para explorar.
 
-Não tem como descobrir a origem do erro,
-Mas minha suspeita é essa sequência de eventos que provavelmente levou ao erro de codificação:
+Além disso, o projeto inclui um módulo de utilitários (UTILS) que contém um script de correção, criado para tratar questões específicas encontradas durante a EDA, como problemas de codificação nos dados. 
 
-1. **Criação da Mensagem Original:** Os dados foram originalmente criados em uma codificação Windows-1252.
-    
-    🔄 (Salvar)
-    
-2. **Arquivo Original:** Os dados foram armazenados no banco de dados em Windows-1252.
-    
-    🔄 (Conversão Incorreta para UTF-8)
-    
-3. **Arquivo Confuso:** Os dados foram convertidos (incorretamente) para UTF-8, criando problemas de codificação.
-    
-    🔄 (Compartilhamento/Transmissão)
-    
-4. **Recebimento do Arquivo:** Você recebeu o arquivo em UTF-8, mas ele ainda apresenta problemas de codificação.
-    
-
-### 🛠️ Solução Proposta:
-
-A estratégia é "desconverter" e depois "reconverter" a coluna "Name" para garantir que ela esteja na codificação correta, UTF-8.
-
-1. **Leitura do Arquivo:**
-    
-    * Utilize a codificação UTF-8 para ler o arquivo.
-    
-    
-2. **Correção da Coluna "Name":**
-    
-    * Faça um decode usando o Windows-1252 apenas para a coluna "Name".
-    
-    
-3. **Salvamento do Arquivo Corrigido:**
-    
-    * Salve o arquivo com a codificação UTF-8.
-
-### 📜 Exemplo de Código:
-
-```python
-import pandas as pd
-
-# Função para corrigir a codificação de uma string
-def fix_encoding(problem_string):
-    if isinstance(problem_string, str):
-        return problem_string.encode('Windows-1252', errors='ignore').decode('utf-8', errors='ignore')
-    else:
-        return problem_string
-
-# Lendo o arquivo com codificação UTF-8
-df = pd.read_csv('data/Listings.csv', encoding='utf-8', encoding_errors='ignore')
-
-# Aplicando a correção de codificação na coluna 'Name'
-df['Name'] = df['Name'].apply(fix_encoding)
-
-# Salvando o arquivo corrigido com codificação UTF-8
-df.to_csv('data/Listings_new.csv', encoding='utf-8', index=False)
-```
+Através deste repositório, buscamos não só armazenar o código e os resultados desta análise mas também oferecer uma documentação robusta e um guia para a execução dos scripts, facilitando a colaboração e o compartilhamento de conhecimento.
 
 ## Passos para Execução
 
 ### 1. Clonar o Repositório
 
-Primeiramente, clone o repositório para o seu ambiente local usando o Git.
+Clone o repositório para o seu ambiente local usando o Git.
 
 ```sh
 git clone git@github.com:lvgalvao/5DataGlowUp_lvgalvaofilho.git
@@ -83,22 +29,32 @@ poetry install
 
 ### 3. Adicionar o Dataset
 
-Salve o arquivo `Listings.csv` na pasta `Data`, que deve estar localizada na raiz do diretório do projeto. Se a pasta não existir, crie-a.
-
-Como é um arquivo com mais de 100mb, não subi aqui no Github
+Salve o arquivo `Listings.csv` na pasta `Data`, que deve estar localizada na raiz do diretório do projeto. Caso a pasta não exista, crie-a.
 
 ```sh
 mkdir Data  # Criar a pasta se ela não existir
 ```
 
-Mova o arquivo `Listings.csv` para a pasta `Data`.
+**Nota:** Devido ao tamanho do arquivo, ele não está disponível diretamente no GitHub. Assegure-se de mover o arquivo `Listings.csv` para a pasta `Data`.
 
 ### 4. Executar o Script Principal
 
-Finalmente, execute o script principal para aplicar a correção de codificação.
+Execute o script principal para aplicar a correção de codificação e gerar um novo arquivo corrigido.
 
 ```sh
 poetry run python3 src/my_encoding.py
 ```
 
-🎉 **Pronto!** O script deve ser executado e o arquivo corrigido deve ser salvo de acordo com as instruções do código, gerando um Listings_new.csv correto.
+### 5. Realizando EDA
+
+Após realizar a correção de codificação, a EDA pode ser visualizada acessando a documentação do MkDocs no diretório `docs` ou utilizando a ferramenta de visualização em `notebooks/eda.ipynb`.
+
+🎉 **Pronto!** Agora você tem um ambiente de desenvolvimento configurado e pronto para explorar os dados!
+
+## Módulo UTILS
+
+O módulo UTILS foi desenvolvido para auxiliar na correção e tratamento de dados, oferecendo scripts úteis que otimizam a preparação dos dados para análise.
+
+## Contribuições
+
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma Issue ou criar um Pull Request.

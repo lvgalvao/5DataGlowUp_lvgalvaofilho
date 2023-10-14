@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="..">
       
-        <link rel="next" href="utils/">
+      
+        <link rel="next" href="../reports/pandas_profiling_report.html">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
-        <title>5 Data Glow UP</title>
+        <title>Utils - 5 Data Glow UP</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -44,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bem-vindo-ao-projeto-de-dataviz" class="md-skip">
+        <a href="#solucao-de-erro-de-codificacao-no-dataset-listingscsv" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -87,7 +89,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="." title="5 Data Glow UP" class="md-header__button md-logo" aria-label="5 Data Glow UP" data-md-component="logo">
+    <a href=".." title="5 Data Glow UP" class="md-header__button md-logo" aria-label="5 Data Glow UP" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -107,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Utils
             
           </span>
         </div>
@@ -193,7 +195,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="5 Data Glow UP" class="md-nav__button md-logo" aria-label="5 Data Glow UP" data-md-component="logo">
+    <a href=".." title="5 Data Glow UP" class="md-nav__button md-logo" aria-label="5 Data Glow UP" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -220,6 +222,25 @@
       
   
   
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -235,18 +256,18 @@
           
   
   <span class="md-ellipsis">
-    Home
+    Utils
   </span>
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Home
+    Utils
   </span>
   
 
@@ -268,23 +289,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivo-do-projeto" class="md-nav__link">
-    Objetivo do Projeto
+  <a href="#problema-erro-de-codificacao-na-coluna-name" class="md-nav__link">
+    Problema: Erro de Codificação na Coluna "Name"
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dataset-listings" class="md-nav__link">
-    Dataset Listings
+  <a href="#solucao-desenvolvimento-do-modulo-my_encodingpy" class="md-nav__link">
+    Solução: Desenvolvimento do Módulo my_encoding.py
+  </a>
+  
+    <nav class="md-nav" aria-label="Solução: Desenvolvimento do Módulo my_encoding.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#src.utils.my_encoding" class="md-nav__link">
+    my_encoding
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#uso-do-pandas-profiling-para-eda-automatica" class="md-nav__link">
-    Uso do Pandas Profiling para EDA Automática
+        
+          <li class="md-nav__item">
+  <a href="#src.utils.my_encoding.fix_encoding" class="md-nav__link">
+    fix_encoding()
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#origem-suspeita-do-erro" class="md-nav__link">
+    🕵️‍♂️ Origem Suspeita do Erro:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucao-proposta" class="md-nav__link">
+    🛠️ Solução Proposta:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -302,26 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="utils/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Utils
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="reports/pandas_profiling_report.html" class="md-nav__link">
+      <a href="../reports/pandas_profiling_report.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -361,23 +390,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivo-do-projeto" class="md-nav__link">
-    Objetivo do Projeto
+  <a href="#problema-erro-de-codificacao-na-coluna-name" class="md-nav__link">
+    Problema: Erro de Codificação na Coluna "Name"
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dataset-listings" class="md-nav__link">
-    Dataset Listings
+  <a href="#solucao-desenvolvimento-do-modulo-my_encodingpy" class="md-nav__link">
+    Solução: Desenvolvimento do Módulo my_encoding.py
+  </a>
+  
+    <nav class="md-nav" aria-label="Solução: Desenvolvimento do Módulo my_encoding.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#src.utils.my_encoding" class="md-nav__link">
+    my_encoding
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#uso-do-pandas-profiling-para-eda-automatica" class="md-nav__link">
-    Uso do Pandas Profiling para EDA Automática
+        
+          <li class="md-nav__item">
+  <a href="#src.utils.my_encoding.fix_encoding" class="md-nav__link">
+    fix_encoding()
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#origem-suspeita-do-erro" class="md-nav__link">
+    🕵️‍♂️ Origem Suspeita do Erro:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucao-proposta" class="md-nav__link">
+    🛠️ Solução Proposta:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -399,207 +455,125 @@
   
 
 
-<h1 id="bem-vindo-ao-projeto-de-dataviz">Bem-Vindo ao Projeto de Dataviz</h1>
-<p>Este projeto foi desenvolvido com o intuito de contribuir para a comunidade de dados, oferecendo recursos e insights úteis através da exploração de dados e visualização de dados (DataViz). A ideia central é empregar técnicas e ferramentas de engenharia de dados e análise exploratória de dados (EDA) para revelar padrões, anomalias e estruturas nas informações coletadas, possibilitando uma compreensão mais aprofundada e orientada por dados.</p>
-<h2 id="objetivo-do-projeto">Objetivo do Projeto</h2>
-<p>A exploração de dados e a visualização de dados são etapas cruciais em qualquer projeto de ciência de dados ou análise de dados, proporcionando uma compreensão profunda e insights valiosos dos dados em mãos. Este projeto visa:</p>
+<h1 id="solucao-de-erro-de-codificacao-no-dataset-listingscsv">Solução de Erro de Codificação no Dataset <code>Listings.csv</code></h1>
+<h2 id="problema-erro-de-codificacao-na-coluna-name">Problema: Erro de Codificação na Coluna "Name"</h2>
+<h2 id="solucao-desenvolvimento-do-modulo-my_encodingpy">Solução: Desenvolvimento do Módulo <code>my_encoding.py</code></h2>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="src.utils.my_encoding"></a>
+  <div class="doc doc-contents first">
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h3 id="src.utils.my_encoding.fix_encoding" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">fix_encoding</span><span class="p">(</span><span class="n">problem_string</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Função para corrigir a codificação de uma string</p>
+
+          <details class="quote">
+            <summary>Source code in <code>src/utils/my_encoding.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">fix_encoding</span><span class="p">(</span><span class="n">problem_string</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Função para corrigir a codificação de uma string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span>
+        <span class="n">problem_string</span><span class="p">,</span> <span class="nb">str</span>
+    <span class="p">):</span>  <span class="c1"># Checar se é uma string, foi necessário por ter valores nulos</span>
+        <span class="k">return</span> <span class="n">problem_string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;Windows-1252&quot;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span>
+            <span class="s2">&quot;utf-8&quot;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span>
+        <span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">problem_string</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div><h3 id="origem-suspeita-do-erro">🕵️‍♂️ Origem Suspeita do Erro:</h3>
+<p>Não tem como descobrir a origem do erro,
+Mas minha suspeita é essa sequência de eventos que provavelmente levou ao erro de codificação:</p>
+<ol>
+<li>
+<p><strong>Criação da Mensagem Original:</strong> Os dados foram originalmente criados em uma codificação Windows-1252.</p>
+<p>🔄 (Salvar)</p>
+</li>
+<li>
+<p><strong>Arquivo Original:</strong> Os dados foram armazenados no banco de dados em Windows-1252.</p>
+<p>🔄 (Conversão Incorreta para UTF-8)</p>
+</li>
+<li>
+<p><strong>Arquivo Confuso:</strong> Os dados foram convertidos (incorretamente) para UTF-8, criando problemas de codificação.</p>
+<p>🔄 (Compartilhamento/Transmissão)</p>
+</li>
+<li>
+<p><strong>Recebimento do Arquivo:</strong> Você recebeu o arquivo em UTF-8, mas ele ainda apresenta problemas de codificação.</p>
+</li>
+</ol>
+<h3 id="solucao-proposta">🛠️ Solução Proposta:</h3>
+<p>A estratégia é "desconverter" e depois "reconverter" a coluna "Name" para garantir que ela esteja na codificação correta, UTF-8.</p>
+<ol>
+<li>
+<p><strong>Leitura do Arquivo:</strong></p>
 <ul>
-<li>Explorar conjuntos de dados de maneira abrangente.</li>
-<li>Identificar padrões e irregularidades nos dados.</li>
-<li>Gerar visualizações de dados informativas e intuitivas.</li>
-<li>Contribuir com a comunidade, oferecendo recursos e insights valiosos.</li>
+<li>Utilize a codificação UTF-8 para ler o arquivo.</li>
 </ul>
-<h2 id="dataset-listings">Dataset Listings</h2>
-<p>Abaixo está a descrição detalhada para cada campo no arquivo CSV que contém informações sobre listagens.</p>
-<table>
-<thead>
-<tr>
-<th>Campo</th>
-<th>Tipo de Dado</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>listing_id</td>
-<td>Integer</td>
-<td>ID único da listagem</td>
-</tr>
-<tr>
-<td>name</td>
-<td>String</td>
-<td>Nome/Descrição da listagem</td>
-</tr>
-<tr>
-<td>host_id</td>
-<td>Integer</td>
-<td>ID único do anfitrião</td>
-</tr>
-<tr>
-<td>host_since</td>
-<td>Date</td>
-<td>Data desde quando o usuário é um anfitrião</td>
-</tr>
-<tr>
-<td>host_location</td>
-<td>String</td>
-<td>Localização do anfitrião</td>
-</tr>
-<tr>
-<td>host_response_time</td>
-<td>String</td>
-<td>Tempo de resposta do anfitrião</td>
-</tr>
-<tr>
-<td>host_response_rate</td>
-<td>Float</td>
-<td>Taxa de resposta do anfitrião</td>
-</tr>
-<tr>
-<td>host_acceptance_rate</td>
-<td>Float</td>
-<td>Taxa de aceitação do anfitrião</td>
-</tr>
-<tr>
-<td>host_is_superhost</td>
-<td>Boolean</td>
-<td>Se o anfitrião é um "superhost"</td>
-</tr>
-<tr>
-<td>host_total_listings_count</td>
-<td>Float</td>
-<td>Total de listagens do anfitrião</td>
-</tr>
-<tr>
-<td>host_has_profile_pic</td>
-<td>Boolean</td>
-<td>Se o anfitrião tem foto de perfil</td>
-</tr>
-<tr>
-<td>host_identity_verified</td>
-<td>Boolean</td>
-<td>Se a identidade do anfitrião foi verificada</td>
-</tr>
-<tr>
-<td>neighbourhood</td>
-<td>String</td>
-<td>Bairro da listagem</td>
-</tr>
-<tr>
-<td>district</td>
-<td>String</td>
-<td>Distrito da listagem</td>
-</tr>
-<tr>
-<td>city</td>
-<td>String</td>
-<td>Cidade da listagem</td>
-</tr>
-<tr>
-<td>latitude</td>
-<td>Float</td>
-<td>Latitude da listagem</td>
-</tr>
-<tr>
-<td>longitude</td>
-<td>Float</td>
-<td>Longitude da listagem</td>
-</tr>
-<tr>
-<td>property_type</td>
-<td>String</td>
-<td>Tipo de propriedade</td>
-</tr>
-<tr>
-<td>room_type</td>
-<td>String</td>
-<td>Tipo de quarto</td>
-</tr>
-<tr>
-<td>accommodates</td>
-<td>Integer</td>
-<td>Número de acomodações</td>
-</tr>
-<tr>
-<td>bedrooms</td>
-<td>Float</td>
-<td>Número de quartos</td>
-</tr>
-<tr>
-<td>amenities</td>
-<td>List</td>
-<td>Lista de comodidades</td>
-</tr>
-<tr>
-<td>price</td>
-<td>Integer</td>
-<td>Preço da listagem</td>
-</tr>
-<tr>
-<td>minimum_nights</td>
-<td>Integer</td>
-<td>Noites mínimas para reserva</td>
-</tr>
-<tr>
-<td>maximum_nights</td>
-<td>Integer</td>
-<td>Noites máximas para reserva</td>
-</tr>
-<tr>
-<td>review_scores_rating</td>
-<td>Float</td>
-<td>Pontuação geral de avaliações</td>
-</tr>
-<tr>
-<td>review_scores_accuracy</td>
-<td>Float</td>
-<td>Pontuação de precisão nas avaliações</td>
-</tr>
-<tr>
-<td>review_scores_cleanliness</td>
-<td>Float</td>
-<td>Pontuação de limpeza nas avaliações</td>
-</tr>
-<tr>
-<td>review_scores_checkin</td>
-<td>Float</td>
-<td>Pontuação de check-in nas avaliações</td>
-</tr>
-<tr>
-<td>review_scores_communication</td>
-<td>Float</td>
-<td>Pontuação de comunicação nas avaliações</td>
-</tr>
-<tr>
-<td>review_scores_location</td>
-<td>Float</td>
-<td>Pontuação de localização nas avaliações</td>
-</tr>
-<tr>
-<td>review_scores_value</td>
-<td>Float</td>
-<td>Pontuação de valor nas avaliações</td>
-</tr>
-<tr>
-<td>instant_bookable</td>
-<td>Boolean</td>
-<td>Se a listagem é instantaneamente reservável</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Nota:</strong> A descrição foi feita de maneira simplificada e pode requerer ajustes conforme a necessidade do projeto e os detalhes específicos do seu dataset.</p>
-<h2 id="uso-do-pandas-profiling-para-eda-automatica">Uso do Pandas Profiling para EDA Automática</h2>
-<p>A biblioteca <a href="https://github.com/pandas-profiling/pandas-profiling">Pandas Profiling</a> é uma ferramenta essencial utilizada neste projeto para realizar uma Análise Exploratória de Dados (EDA) de forma rápida e automática. A ferramenta gera relatórios de dados abrangentes, que oferecem uma visão instantânea e profunda sobre a distribuição, frequência e tipos de dados presentes no conjunto de dados analisado.</p>
-<p>Com o Pandas Profiling, fomos capazes de:</p>
+</li>
+<li>
+<p><strong>Correção da Coluna "Name":</strong></p>
 <ul>
-<li>Rapidamente gerar um EDA inicial e identificar aspectos críticos dos dados.</li>
-<li>Visualizar distribuições e correlações de variáveis de uma maneira intuitiva.</li>
-<li>Identificar e lidar com valores ausentes e duplicados.</li>
-<li>Gerar relatórios HTML interativos que podem ser compartilhados e visualizados facilmente por outras partes interessadas.</li>
+<li>Faça um decode usando o Windows-1252 apenas para a coluna "Name".</li>
 </ul>
-<p>Os relatórios gerados a partir desta biblioteca servem como um ponto de partida robusto para uma análise de dados mais aprofundada e são um recurso inestimável para a exploração inicial de qualquer conjunto de dados.</p>
-<hr />
-<p>Sinta-se à vontade para explorar os relatórios e visualizações neste site e compartilhar seus insights e feedback. Juntos, podemos aprimorar a prática da ciência de dados e criar uma comunidade mais inform</p>
+</li>
+<li>
+<p><strong>Salvamento do Arquivo Corrigido:</strong></p>
+<ul>
+<li>Salve o arquivo com a codificação UTF-8.</li>
+</ul>
+</li>
+</ol>
 
 
 
@@ -638,10 +612,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>
