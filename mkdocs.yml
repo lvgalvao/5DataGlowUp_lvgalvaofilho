@@ -8,6 +8,7 @@ nav:
   - Home: index.md
   - Utils: utils.md
   - Report Pandas Profiling: reports/pandas_profiling_report.html
+  - SweetViz: reports/sweetviz_report.html
 
 repo_name: "lvgalvao/5DataGlowUp_lvgalvaofilho"
 repo_url: "https://github.com/lvgalvao/5DataGlowUp_lvgalvaofilho"

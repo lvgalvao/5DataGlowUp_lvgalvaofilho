@@ -456,6 +456,21 @@ PyWavelets = "*"
 scipy = "*"
 
 [[package]]
+name = "importlib-resources"
+version = "6.1.0"
+description = "Read resources from Python packages"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "importlib_resources-6.1.0-py3-none-any.whl", hash = "sha256:aa50258bbfa56d4e33fbd8aa3ef48ded10d1735f11532b8df95388cc6bdb7e83"},
+    {file = "importlib_resources-6.1.0.tar.gz", hash = "sha256:9d48dcccc213325e810fd723e7fbb45ccb39f6cf5c31f00cf2b965f5f10f3cb9"},
+]
+
+[package.extras]
+docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (<7.2.5)", "sphinx (>=3.5)", "sphinx-lint"]
+testing = ["pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-mypy (>=0.9.1)", "pytest-ruff", "zipp (>=3.17)"]
+
+[[package]]
 name = "isort"
 version = "5.12.0"
 description = "A Python utility / library to sort Python imports."
@@ -1836,6 +1851,31 @@ develop = ["colorama", "cython (>=0.29.26)", "cython (>=0.29.28,<3.0.0)", "flake
 docs = ["ipykernel", "jupyter-client", "matplotlib", "nbconvert", "nbformat", "numpydoc", "pandas-datareader", "sphinx"]
 
 [[package]]
+name = "sweetviz"
+version = "2.2.1"
+description = "A pandas-based library to visualize and compare datasets."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "sweetviz-2.2.1-py3-none-any.whl", hash = "sha256:76d338a4896d2f807fc3e77f1a5766145221b8a011bf29f4f17f075f3629d23d"},
+    {file = "sweetviz-2.2.1.tar.gz", hash = "sha256:677e8eb5ab0159eb503d9507f3cd401302cb35e30077a61e3d6d6af9a83bd982"},
+]
+
+[package.dependencies]
+importlib-resources = ">=1.2.0"
+jinja2 = ">=2.11.1"
+matplotlib = ">=3.1.3"
+numpy = ">=1.16.0"
+pandas = ">=0.25.3,<1.0.0 || >1.0.0,<1.0.1 || >1.0.1,<1.0.2 || >1.0.2"
+scipy = ">=1.3.2"
+tqdm = ">=4.43.0"
+
+[package.extras]
+dev = ["pytest (>=6)", "pytest-cov (>=3)"]
+docs = ["furo", "myst-parser (>=0.13)", "sphinx (>=4.0)", "sphinx-autodoc-typehints", "sphinx-book-theme (>=0.1.0)", "sphinx-copybutton"]
+test = ["pytest (>=6)", "pytest-cov (>=3)"]
+
+[[package]]
 name = "tangled-up-in-unicode"
 version = "0.2.0"
 description = "Access to the Unicode Character Database (UCD)"
@@ -2128,4 +2168,4 @@ unicode = ["tangled-up-in-unicode (==0.2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "b981c7f1e2e8ccf6aadd058b892da4596329891299f5ca412f068259ca9f25f1"
+content-hash = "fd0d233918160a31944cf235597701d286d74115bcde3861c94f95755618095e"
