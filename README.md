@@ -2,11 +2,11 @@
 
 ## Sobre o Projeto
 
-Este projeto visa realizar uma Análise Exploratória de Dados (EDA) e apresentar visualizações de dados (DataViz) para o dataset fornecido. Utilizamos o [Pandas Profiling](https://lvgalvao.github.io/5DataGlowUp_lvgalvaofilho/reports/pandas_profiling_report.html) e o [Sweetviz](https://lvgalvao.github.io/5DataGlowUp_lvgalvaofilho/reports/sweetviz_report.html) para gerar uma EDA automática, fornecendo insights valiosos diretamente dos dados brutos e apresentando visualizações interativas para explorar.
+Este projeto foi desenvolvido com o objetivo de realizar uma Análise Exploratória de Dados (EDA) e criar visualizações de dados (DataViz) para o conjunto de dados fornecido. Utilizamos ferramentas como [Pandas Profiling](https://lvgalvao.github.io/5DataGlowUp_lvgalvaofilho/reports/pandas_profiling_report.html) e [Sweetviz](https://lvgalvao.github.io/5DataGlowUp_lvgalvaofilho/reports/sweetviz_report.html) para gerar relatórios de EDA automáticos, permitindo insights rápidos e diretos dos dados brutos, além de apresentar visualizações interativas.
 
-Além disso, o projeto inclui um módulo de utilitários (UTILS) que contém um script de correção, criado para tratar questões específicas encontradas durante a EDA, como problemas de codificação nos dados. 
+Adicionalmente, criamos uma pipeline de processamento de dados robusta que ajuda na limpeza e preparação dos dados, corrigindo problemas de codificação e adicionando métricas de qualidade. Esta pipeline é parte do módulo UTILS, que fornece scripts e funções auxiliares para tratamento de dados.
 
-Através deste repositório, buscamos não só armazenar o código e os resultados desta análise mas também oferecer uma documentação robusta e um guia para a execução dos scripts, facilitando a colaboração e o compartilhamento de conhecimento.
+O repositório serve como um meio de documentar e compartilhar o código, os resultados da análise e o conhecimento adquirido durante o desenvolvimento do projeto.
 
 ## Documentação do projeto
 
@@ -24,7 +24,12 @@ Através deste repositório, buscamos não só armazenar o código e os resultad
 
 ![Sweet](static/sweet_profile.png)
 [Sweetviz Profiling](https://lvgalvao.github.io/5DataGlowUp_lvgalvaofilho/reports/pandas_profiling_report.html)
-## Passos para Execução
+
+## Pipeline de Processamento de Dados
+
+Desenvolvemos uma pipeline automatizada para o processamento dos arquivos CSV encontrados no dataset. Essa pipeline realiza várias tarefas, incluindo a correção de problemas de codificação nos dados e a adição de novas colunas com métricas de qualidade para análise posterior.
+
+Para executar a pipeline, você deve usar os seguintes comandos:
 
 ### 1. Clonar o Repositório
 
@@ -43,28 +48,10 @@ Utilize o Poetry para instalar as dependências do projeto.
 poetry install
 ```
 
-### 3. Adicionar o Dataset
-
-Salve o arquivo `Listings.csv` na pasta `Data`, que deve estar localizada na raiz do diretório do projeto. Caso a pasta não exista, crie-a.
+### 3. Rodando a pipeline
 
 ```sh
-mkdir Data  # Criar a pasta se ela não existir
+poetry run task process
 ```
 
-**Nota:** Devido ao tamanho do arquivo, ele não está disponível diretamente no GitHub. Assegure-se de mover o arquivo `Listings.csv` para a pasta `Data`.
-
-### 4. Realizando EDA
-
-Após realizar a correção de codificação, a EDA pode ser visualizada acessando a documentação do MkDocs no diretório `docs` 
-
-Para rodar são 2 arquivos na pasta `src/eda`
-
-🎉 **Pronto!** Agora você tem um ambiente de desenvolvimento configurado e pronto para explorar os dados!
-
-## Módulo UTILS
-
-O módulo UTILS foi desenvolvido para auxiliar na correção e tratamento de dados, oferecendo scripts úteis que otimizam a preparação dos dados para análise.
-
-## Contribuições
-
-Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma Issue ou criar um Pull Request.
+🎉 **Pronto!** Agora você tem os dados tratados
