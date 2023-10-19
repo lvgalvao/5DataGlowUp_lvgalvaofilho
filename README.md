@@ -6,7 +6,7 @@ Este projeto foi desenvolvido com o objetivo de participar de um desafio - e de 
 
 Além disso, todos os serviços são utilizando a camada gratuita. Portanto, é possível que alguns serviços não estejam disponíveis de imediato, normalmente eles precisam de 2/3 minutos para ligarem. Mas espere, vale a pena (ou me mande um pix!)
 
-O objetivo do projeto foi construir um dashboard interativo e atualizado com dados em tempo real, utilizando o fastAPI, disponível em [FastAPI](https://fivedataglowup.onrender.com/), que serve os dados processados em um formato que pode ser facilmente consumido por outras aplicações ou serviços.
+O objetivo do projeto foi construir um dashboard interativo e atualizado com dados em tempo real, utilizando o fastAPI, disponível em [FastAPI](https://fivedataglowup.onrender.com/), que serve os dados processados em um formato que pode ser facilmente consumido por outras aplicações ou serviços..
 
 
 [Vídeo tutorial de como usar o FastAPI](https://www.loom.com/share/d93390c5513547e59e3f8f00e33712a3?sid=9ca4daaf-a9d6-447c-a7a4-7d1226dd260a)
