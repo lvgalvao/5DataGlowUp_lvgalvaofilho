@@ -23,6 +23,12 @@ requests = "^2.31.0"
 gdown = "^4.7.1"
 loguru = "^0.7.2"
 tqdm = "^4.66.1"
+streamlit = "^1.27.2"
+boto3 = "^1.28.66"
+python-dotenv = "^1.0.0"
+matplotlib = "^3.8.0"
+numpy = "^1.26.1"
+plotly = "^5.17.0"
 
 
 [build-system]
@@ -36,3 +42,4 @@ kill = "kill -9 $(lsof -t -i :8000)"
 serve = "poetry run mkdocs serve"
 test = "poetry run pytest -v"
 run = "poetry run python3 src/pipeline/main.py"
+streamlit = "(cd src/frontend && streamlit run main.py)"
