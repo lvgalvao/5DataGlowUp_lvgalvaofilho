@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto - Acesso à API e Dashboard Interativo
 
-Este projeto foi desenvolvido com o objetivo de participar de um desafio - e de quebra me desenferrjar no dataviz. Todo o conteúdo apresentado aqui possui um caráter estritamente educacional, refletindo uma abordagem simplificada que é ideal para fins de aprendizagem. Portanto, é importante ressaltar que o código, como está, demandaria modificações substanciais para ser aplicado em um contexto de projeto real.
+Este projeto foi desenvolvido com o objetivo de participar de um desafio - e de quebra me desenferrujar no dataviz. Todo o conteúdo apresentado aqui possui um caráter estritamente educacional, refletindo uma abordagem simplificada que é ideal para fins de aprendizagem. Portanto, é importante ressaltar que o código, como está, demandaria modificações substanciais para ser aplicado em um contexto de projeto real.
 
 Além disso, todos os serviços são utilizando a camada gratuita. Portanto, é possível que alguns serviços não estejam disponíveis de imediato, normalmente eles precisam de 2/3 minutos para ligarem. Mas espere, vale a pena (ou me mande um pix!)
 
