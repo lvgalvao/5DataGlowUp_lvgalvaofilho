@@ -8,6 +8,10 @@ Além disso, todos os serviços são utilizando a camada gratuita. Portanto, é 
 
 O objetivo do projeto foi construir um dashboard interativo e atualizado com dados em tempo real, utilizando o fastAPI, disponível em [FastAPI](https://fivedataglowup.onrender.com/), que serve os dados processados em um formato que pode ser facilmente consumido por outras aplicações ou serviços.
 
+
+[Vídeo tutorial de como usar o FastAPI](https://www.loom.com/share/d93390c5513547e59e3f8f00e33712a3?sid=9ca4daaf-a9d6-447c-a7a4-7d1226dd260a)
+![Tutorial](static/tutorial.png)
+
 Frontend
 ![Fastapi](static/fastapi.png)
 
