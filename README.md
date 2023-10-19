@@ -6,7 +6,16 @@ Este projeto foi desenvolvido com o objetivo de participar de um desafio - e de 
 
 Além disso, todos os serviços são utilizando a camada gratuita. Portanto, é possível que alguns serviços não estejam disponíveis de imediato, normalmente eles precisam de 2/3 minutos para ligarem. Mas espere, vale a pena (ou me mande um pix!)
 
-O objetivo do projeto foi construir um dashboard interativo e atualizado com dados em tempo real, utilizando o Streamlit, que você pode acessar através do seguinte link: [Dashboard Streamlit](https://lvgalvao-5dataglowup-lvgalvaofilho-srcfrontendmain-dyv63r.streamlit.app/). Este dashboard utiliza os dados armazenados em um bucket AWS, consumindo os JSONs gerados pela nossa API. Ele permite uma exploração dinâmica e visual dos dados, proporcionando insights valiosos com a facilidade de interatividade fornecida pelo Streamlit.
+O objetivo do projeto foi construir um dashboard interativo e atualizado com dados em tempo real, utilizando o fastAPI, disponível em [FastAPI](https://fivedataglowup.onrender.com/), que serve os dados processados em um formato que pode ser facilmente consumido por outras aplicações ou serviços.
+
+Frontend
+![Fastapi](static/fastapi.png)
+
+
+Consegue ver plotado no mapa baseado em lat e lon
+![FastapiII](static/fastapi_2.png)
+
+Este projeto está integrado ao Streamlit que você pode acessar através do seguinte link: [Dashboard Streamlit](https://lvgalvao-5dataglowup-lvgalvaofilho-srcfrontendmain-dyv63r.streamlit.app/). Este dashboard utiliza os dados armazenados em um bucket AWS, consumindo os JSONs gerados pela nossa API. Ele permite uma exploração dinâmica e visual dos dados, proporcionando insights valiosos com a facilidade de interatividade fornecida pelo Streamlit.
 
 Consegue ver as últimas atualizações
 ![Dash_02](static/dash_02.png)
@@ -15,7 +24,6 @@ Consegue ver as últimas atualizações
 Consegue ver plotado no mapa baseado em lat e lon
 ![Dash_01](static/dash.png)
 
-Este projeto está integrado a uma API disponível em [https://fivedataglowup.onrender.com/](https://fivedataglowup.onrender.com/), que serve os dados processados em um formato que pode ser facilmente consumido por outras aplicações ou serviços.
 
 
 ## EDAs e ETL
