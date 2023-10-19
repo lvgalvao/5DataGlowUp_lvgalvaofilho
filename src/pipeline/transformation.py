@@ -51,10 +51,12 @@ def process_files(load_path: str, save_path: str) -> List[str]:
     csv_files = [f for f in os.listdir(load_path) if f.endswith(".csv")]
 
     with tqdm(total=100, desc="Processando arquivos", unit="percent") as pbar:
-        pbar.update(10)  # assumimos que 20% do trabalho é iniciado imediatamente
+        pbar.update(
+            10
+        )  # Isso aqui é só uma gambiarra mesmo, não tem nada a ver com o progresso real
         pbar.refresh()
         time.sleep(2)
-        pbar.update(10)  # assumimos que 20% do trabalho é iniciado imediatamente
+        pbar.update(10)
         pbar.refresh()
         time.sleep(2)
         for index, filename in enumerate(csv_files):
