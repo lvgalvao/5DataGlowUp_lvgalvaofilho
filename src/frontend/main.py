@@ -40,6 +40,40 @@ def main():
         st.error(f"Erro ao acessar o bucket S3: {e}")
         return
 
+    # Lista para armazenar os últimos 5 JSONs ordenados por última modificação
+    latest_jsons = sorted(objects, key=lambda x: x["LastModified"], reverse=True)[:5]
+
+    # Lista para armazenar os conteúdos dos últimos 5 JSONs
+    latest_json_contents = []
+
+    for file in latest_jsons:
+        file_key = file["Key"]
+
+        try:
+            # Baixando o arquivo do S3
+            s3_object = s3.get_object(Bucket=BUCKET_NAME, Key=file_key)
+            data = s3_object["Body"].read()
+            json_content = json.loads(data)
+
+            # Adicionar o JSON à lista de conteúdos
+            latest_json_contents.append((file_key, json_content))
+
+        except ClientError as e:
+            st.error(f"Erro ao recuperar o arquivo {file_key}: {e}")
+            continue
+        except json.JSONDecodeError:
+            st.error(f"Não foi possível decodificar o arquivo {file_key} como JSON.")
+            continue
+
+    # Exibir os últimos 5 JSONs
+    st.subheader("Últimos 5 JSONs (ordenados por última modificação no S3)")
+    for i, (file_key, json_content) in enumerate(latest_json_contents, 1):
+        with st.expander(
+            f"JSON {i} - Última modificação: {latest_jsons[i-1]['LastModified']}"
+        ):
+            st.text(f"Nome do arquivo: {file_key}")
+            st.json(json_content)
+
     # Lista para armazenar os conteúdos de todos os JSONs
     all_json_contents = []
 
