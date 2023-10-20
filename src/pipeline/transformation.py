@@ -77,8 +77,13 @@ def process_files(load_path: str, save_path: str) -> List[str]:
                 df = add_quality_columns(df)
 
                 # Salvar o DataFrame processado no novo diretório, mantendo o mesmo nome de arquivo
-                save_file_path = os.path.join(save_path, filename)
-                df.to_csv(save_file_path, encoding="utf-8", index=False)
+                base_filename = os.path.splitext(filename)[
+                    0
+                ]  # Remove a extensão original
+                save_file_path = os.path.join(save_path, f"{base_filename}.parquet")
+
+                # df.to_csv(save_file_path, encoding="utf-8", index=False)
+                df.to_parquet(save_file_path, index=False)
 
                 # Construindo a mensagem de sucesso
                 message = f"Arquivo '{filename}' foi processado e salvo em '{save_file_path}'."
