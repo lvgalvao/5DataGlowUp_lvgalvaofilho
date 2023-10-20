@@ -73,6 +73,9 @@ def process_files(load_path: str, save_path: str) -> List[str]:
                 if "Listings.csv" in filename:
                     df["name"] = df["name"].apply(fix_encoding)
 
+                    # Removendo listagens com preço menor que 10000
+                    df = df[df["price"] >= 10000]
+
                 # Adicionar colunas de qualidade, independentemente do arquivo
                 df = add_quality_columns(df)
 
